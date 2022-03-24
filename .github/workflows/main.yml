@@ -15,5 +15,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
         server: version.testingonline.business
-        username: myFtpUserName
+        username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
+        server-dir: /www/version.testingonline.business/
