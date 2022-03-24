@@ -32,10 +32,10 @@
     <div class="request-api hint">
         <h3>Request url should be:</h3>
         <ul>
-            <li><?=HOME_URL;?>/data.php/?id=1</li>
-            <li><?=HOME_URL;?>/data.php/?timestamp=1647570247</li>          
-            <li><?=HOME_URL;?>/data.php/2</li>
-            <li><?=HOME_URL;?>/data.php/get_all_records</li>
+            <li><?=HOME;?>/data.php/?id=1</li>
+            <li><?=HOME;?>/data.php/?timestamp=1647570247</li>          
+            <li><?=HOME;?>/data.php/2</li>
+            <li><?=HOME;?>/data.php/get_all_records</li>
         </ul>
         <p>Json Format</p>
         <pre>
