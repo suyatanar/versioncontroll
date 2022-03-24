@@ -17,4 +17,3 @@ jobs:
         server: version.testingonline.business
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: /www/version.testingonline.business/
