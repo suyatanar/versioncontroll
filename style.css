@@ -1,0 +1,31 @@
+.request-api{
+	max-width: 800px;
+	margin: 3% auto;
+}
+.request-api #getdata{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+    justify-content: center;
+}
+.request-api #getdata .form-control{
+	width: 15%;
+	padding: 10px;
+}
+.request-api #getdata .form-control input, .request-api #getdata .form-control select{
+	padding: 10px;
+}
+.request-api #getdata .form-control:nth-child(2){
+	width: 60%;
+}
+.request-api #getdata .form-control #request_url{
+	width: 100%;
+}
+.request-api #getdata textarea{
+	width: 100%;
+}
+.full-width{
+	width: 100%;
+}
