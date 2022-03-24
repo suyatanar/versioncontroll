@@ -1,2 +1,2 @@
 <?php 
-define("HOME", 'http://localhost/version_controlled');
+define("HOME", 'http://version.testingonline.business');
