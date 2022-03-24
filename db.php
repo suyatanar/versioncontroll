@@ -1,15 +1,15 @@
 <?php
 include 'config.php';
 class Database{
-    private $servername = "localhost";
-    private $db_username = "suyadanar_version";
-    private $db_password = "wY18s6dRX)";
-    private $db_name = "suyadanar_version";
+    private $hostname = DATABASE_HOSTNAME;
+    private $db_username = DATABASE_USERNAME;
+    private $db_password = DATABASE_PASSWORD;
+    private $db_name = DATABASE_NAME;
     public function __construct(){
 
         if(!isset($this->db)){
             try {
-                $conn = new PDO('mysql:host='.$this->servername.';dbname='.$this->db_name, $this->db_username, $this->db_password);
+                $conn = new PDO('mysql:host='.$this->hostname.';dbname='.$this->db_name, $this->db_username, $this->db_password);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 $this->db = $conn;
             } catch(PDOException $e) {
