@@ -31,7 +31,7 @@ class Database{
             );
         }
         //header('Content-Type: application/json');
-        return json_encode($version);
+        return json_encode($version, JSON_PRETTY_PRINT);
     }
 
     public function getVersion($id = "", $timestamp = ""){
@@ -51,7 +51,7 @@ class Database{
                 'name'  => $data['name'],
                 'timestamp'  => $data['timestamp']
             );
-            return json_encode($version);
+            return json_encode($version, JSON_PRETTY_PRINT);
         }
 
         return false;
@@ -69,7 +69,7 @@ class Database{
                 'name'  => $data['name'],
                 'timestamp'  => $data['timestamp']
             );
-            return json_encode($version);
+            return json_encode($version, JSON_PRETTY_PRINT);
         }
 
         return false;
@@ -91,7 +91,7 @@ class Database{
                 'name'  => $data['name'],
                 'timestamp'  => $data['timestamp']
             );
-            return json_encode($version);
+            return json_encode($version, JSON_PRETTY_PRINT);
         }
 
         return false;
