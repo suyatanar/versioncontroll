@@ -9,10 +9,8 @@ Create Database
 -----
 Run below query to create the database and table to store the data.
 
-CREATE DATABASE IF NOT EXISTS `version_controlled` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
-USE `version_controlled`;
+CREATE DATABASE IF NOT EXISTS `version_controlled` USE `version_controlled`;
 
--- Dumping structure for table version_controlled.version
 CREATE TABLE IF NOT EXISTS `version` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
